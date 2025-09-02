@@ -7,8 +7,8 @@ hero:
   image:
     file: ../../assets/spring_boot.svg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Guidelines
+      link: /guides/guidelines/
       icon: right-arrow
     - text: Read the Starlight docs
       link: https://starlight.astro.build
@@ -18,33 +18,30 @@ hero:
 
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
-## Next steps
+## Main sections
 
 <CardGrid stagger>
   <Card title="Github Projects" icon="github">
     <LinkCard 
-      href="https://github.com/withastro/starlight" 
+      href="github-project/" 
       description='Starlight on GitHub' 
     />
   </Card>
 
 <Card title="Guides" icon="pencil">
   <LinkCard
-    href="https://github.com/withastro/starlight"
+    href="/guides/guidelines/"
     description="Style guides, conventions, naming, architectures, etc.."
   />
 </Card>
 
-<Card title="Docs" icon="open-book">
-  <LinkCard
-    href="https://github.com/withastro/starlight"
-    description="Current and future implementations, error codes, etc."
-  />
+<Card title="Modules" icon="code">
+  <LinkCard href="modules/" description="Implementations, error codes, etc." />
 </Card>
 
 <Card title="Contributors" icon="external">
     <LinkCard 
-      href="https://github.com/withastro/starlight" 
+      href="contributors/" 
       description='Extra information from the developers.' 
     />
 </Card>

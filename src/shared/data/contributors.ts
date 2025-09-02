@@ -1,4 +1,4 @@
-import type { Contributor } from "../../../components/contributors.astro";
+import type { Contributor } from "../components/contributors.astro";
 
 export const contributors: Contributor[] = [
   {

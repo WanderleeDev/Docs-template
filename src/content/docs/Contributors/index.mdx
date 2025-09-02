@@ -3,7 +3,9 @@ title: Contributors List
 description: List of contributors to the project.
 ---
 
-import Contributors from "../../../components/contributors.astro";
-import { contributors } from "./data";
+import Contributor from "../../../shared/components/contributors.astro";
+import { contributors } from "../../../shared/data/contributors";
 
-<Contributors data={contributors} />
+Acknowledgement to all the people who have contributed to the project.
+
+<Contributor data={contributors} />

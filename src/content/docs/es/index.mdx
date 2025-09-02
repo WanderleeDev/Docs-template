@@ -7,8 +7,8 @@ hero:
   image:
     file: ../../../assets/spring_boot.svg
   actions:
-    - text: Guía de ejemplo
-      link: /es/guides/example/
+    - text: Directrices
+      link: /es/guides/guidelines/
       icon: right-arrow
     - text: Leer la documentación de Starlight
       link: https://starlight.astro.build
@@ -16,23 +16,36 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
-## Pasos siguientes
+## Secciones principales
 
 <CardGrid stagger>
-  <Card title="Actualizar el contenido" icon="pencil">
-    Edita `src/content/docs/index.mdx` para ver cómo cambia esta página.
+  <Card title="Proyectos en GitHub" icon="github">
+    <LinkCard 
+      href="/es/github-project/" 
+      description='Starlight en GitHub' 
+    />
   </Card>
-  <Card title="Agregar nuevo contenido" icon="add-document">
-    Agrega archivos Markdown o MDX a `src/content/docs` para crear nuevas
-    páginas.
-  </Card>
-  <Card title="Configurar tu sitio" icon="setting">
-    Edita tu `sidebar` y otros ajustes en `astro.config.mjs`.
-  </Card>
-  <Card title="Leer la documentación" icon="open-book">
-    Más información en [la documentación de
-    Starlight](https://starlight.astro.build/).
-  </Card>
+
+<Card title="Guías" icon="pencil">
+  <LinkCard
+    href="/es/guides/guidelines/"
+    description="Guías de estilo, convenciones, nombres, arquitecturas, etc.."
+  />
+</Card>
+
+<Card title="Módulos" icon="code">
+  <LinkCard
+    href="/es/modules/"
+    description="Current and future implementations."
+  />
+</Card>
+
+<Card title="Contribuidores" icon="external">
+    <LinkCard 
+      href="/es/contributors/" 
+      description='Información extra de los desarrolladores.' 
+    />
+</Card>
 </CardGrid>

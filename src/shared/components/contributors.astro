@@ -50,10 +50,14 @@ const { data } = Astro.props;
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 0;
     }
 
     & .figure {
       position: relative;
+      box-shadow: 0 .5rem 1rem 1px rgba(0, 0, 0, .5);
+      overflow: hidden;
+      border-radius: .4rem;
     }
 
     & .avatar {
@@ -61,10 +65,10 @@ const { data } = Astro.props;
       height: var(--size);
       display: block;
       object-fit: cover;
-      border-radius: .4rem;
     }
 
     & .role {
+      width: 100%;
       position: absolute;
       background-color: rgba(0, 0, 0, .7);
       bottom: 0;

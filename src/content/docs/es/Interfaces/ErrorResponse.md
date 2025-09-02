@@ -1,9 +1,9 @@
 ---
 title: ErrorResponse
-description: ErrorResponse interface.
+description: Interfaz para respuestas de error
 ---
 
-Interface that defines the standard structure of system responses.
+Interfaz que define la estructura de las respuestas de error en el sistema.
 
 ```mermaid
 classDiagram
@@ -25,7 +25,7 @@ classDiagram
     ErrorResponse --> HttpCode
 ```
 
-## Properties
+## Propiedades
 
-- `error`: Error code
-- `detail`: Error detail
+- `error`: Código de error
+- `detail`: Detalle del error
