@@ -1,0 +1,51 @@
+---
+title: Welcome to Starlight
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  tagline: Congrats on setting up a new Starlight project!
+  image:
+    file: ../../assets/spring_boot.svg
+  actions:
+    - text: Example Guide
+      link: /guides/example/
+      icon: right-arrow
+    - text: Read the Starlight docs
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
+
+## Next steps
+
+<CardGrid stagger>
+  <Card title="Github Projects" icon="github">
+    <LinkCard 
+      href="https://github.com/withastro/starlight" 
+      description='Starlight on GitHub' 
+    />
+  </Card>
+
+<Card title="Guides" icon="pencil">
+  <LinkCard
+    href="https://github.com/withastro/starlight"
+    description="Style guides, conventions, naming, architectures, etc.."
+  />
+</Card>
+
+<Card title="Docs" icon="open-book">
+  <LinkCard
+    href="https://github.com/withastro/starlight"
+    description="Current and future implementations, error codes, etc."
+  />
+</Card>
+
+<Card title="Contributors" icon="external">
+    <LinkCard 
+      href="https://github.com/withastro/starlight" 
+      description='Extra information from the developers.' 
+    />
+</Card>
+</CardGrid>

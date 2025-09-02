@@ -1,0 +1,40 @@
+/* Center all diagrams */
+.plantuml-diagram {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Add border and shadow to images */
+.plantuml-img {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style error messages */
+.plantuml-error {
+  background-color: #fff5f5;
+  border: 1px solid #feb2b2;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.plantuml-error p {
+  color: #c53030;
+  margin: 0 0 1rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .plantuml-img {
+    filter: invert(1);
+  }
+}
+.link-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
