@@ -20,6 +20,9 @@ importers:
       astro:
         specifier: ^5.6.1
         version: 5.13.5(@types/node@24.3.0)(rollup@4.50.0)(typescript@5.9.2)
+      astro-mermaid:
+        specifier: ^1.0.4
+        version: 1.0.4(astro@5.13.5(@types/node@24.3.0)(rollup@4.50.0)(typescript@5.9.2))(mermaid@11.10.1)
       astro-plantuml:
         specifier: ^0.1.4
         version: 0.1.4(astro@5.13.5(@types/node@24.3.0)(rollup@4.50.0)(typescript@5.9.2))
@@ -920,6 +923,12 @@ packages:
     resolution: {integrity: sha512-u+zHMqo/QNLE2eqYRCrK3+XMlKakv33Bzuz+56V1gs8H0y6TZ0hIi3VNbIxeTn51NLn+mJfUV/A0kMNfE4rANw==}
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
+
+  astro-mermaid@1.0.4:
+    resolution: {integrity: sha512-2M4bVjqLpDB2EZ4EfD6Utzs7VEEORmlt5hNZcMK54IcKWzflohKvowCzg79RHoAdu30W8a4aECAExH8mF7wG4w==}
+    peerDependencies:
+      astro: ^4.0.0 || ^5.0.0
+      mermaid: ^10.0.0 || ^11.0.0
 
   astro-plantuml@0.1.4:
     resolution: {integrity: sha512-aVNeT1sT6Z77gGYYk62flpbUWLfbFNP3vMRDVWOI8cN1v99dg1To0J6KE2vL24oR7ip/Vk4owBbKL64XMyXj7w==}
@@ -3369,6 +3378,13 @@ snapshots:
     dependencies:
       astro: 5.13.5(@types/node@24.3.0)(rollup@4.50.0)(typescript@5.9.2)
       rehype-expressive-code: 0.41.3
+
+  astro-mermaid@1.0.4(astro@5.13.5(@types/node@24.3.0)(rollup@4.50.0)(typescript@5.9.2))(mermaid@11.10.1):
+    dependencies:
+      astro: 5.13.5(@types/node@24.3.0)(rollup@4.50.0)(typescript@5.9.2)
+      mdast-util-to-string: 4.0.0
+      mermaid: 11.10.1
+      unist-util-visit: 5.0.0
 
   astro-plantuml@0.1.4(astro@5.13.5(@types/node@24.3.0)(rollup@4.50.0)(typescript@5.9.2)):
     dependencies:

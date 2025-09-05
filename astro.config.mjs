@@ -2,14 +2,23 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import catppuccin from "@catppuccin/starlight";
-import rehypeMermaid from "rehype-mermaid";
 import plantuml from "astro-plantuml";
+import mermaid from "astro-mermaid";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     plantuml({
       addWrapperClasses: true,
+    }),
+    mermaid({
+      theme: "forest",
+      autoTheme: true,
+      mermaidConfig: {
+        flowchart: {
+          curve: "basis",
+        },
+      },
     }),
     starlight({
       title: "API Documentation",
@@ -28,15 +37,15 @@ export default defineConfig({
       customCss: ["./src/styles/global.css"],
     }),
   ],
-  markdown: {
-    syntaxHighlight: {
-      excludeLangs: ["mermaid"],
-    },
-    rehypePlugins: [
-      [
-        rehypeMermaid,
-        { strategy: "img-svg", dark: true, colorScheme: "forest" },
-      ],
-    ],
-  },
+  // markdown: {
+  //   syntaxHighlight: {
+  //     excludeLangs: ["mermaid"],
+  //   },
+  //   rehypePlugins: [
+  //     [
+  //       rehypeMermaid,
+  //       { strategy: "img-svg", dark: true, colorScheme: "forest" },
+  //     ],
+  //   ],
+  // },
 });
