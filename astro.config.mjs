@@ -20,19 +20,6 @@ export default defineConfig({
           href: "https://github.com/WanderleeDev/Docs-template",
         },
       ],
-      // sidebar: [
-      //   {
-      //     label: "Guides",
-      //     items: [
-      //       // Each item here is one entry in the navigation menu.
-      //       { label: "Example Guide", slug: "guides/example" },
-      //     ],
-      //   },
-      //   {
-      //     label: "Reference",
-      //     autogenerate: { directory: "reference" },
-      //   },
-      // ],
       locales: {
         root: { label: "English", lang: "en" },
         es: { label: "Español", lang: "es" },
