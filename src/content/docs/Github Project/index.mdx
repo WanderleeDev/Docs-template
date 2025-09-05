@@ -1,11 +1,113 @@
 ---
-title: Example Guide
+title: Overview
 description: A guide in my new Starlight docs site.
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+import { Steps } from "@astrojs/starlight/components";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
 
-## Further reading
+## Prerequisites
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+Before starting, make sure you have:
+
+- A GitHub account
+- An existing repository (or permission to create Projects at the organization level)
+- Admin or maintainer access to the repository
+
+## Project Creation
+
+<Tabs>
+   <TabItem label="Creation">
+      <Steps>
+         1. **Navegar a tu repositorio**
+
+            Ve a tu repositorio en GitHub y busca la pestaña **"Projects"** en la barra de navegación superior.
+            ![github_projects](../../../assets/project-1.png)
+
+         2. **Crear nuevo Project**
+
+            Haz clic en **"New project"** → **"Create a project"**
+
+         3. **Elegir plantilla**
+
+            GitHub te ofrecerá varias opciones:
+
+            - **Board**: Tablero Kanban clásico (recomendado para principiantes)
+            - **Table**: Vista de tabla para datos estructurados
+            - **Roadmap**: Para planificación temporal
+            - **Start from scratch**: Proyecto en blanco
+
+            ![github_projects](../../../assets/project-2.png)
+
+         4. **Configurar el Project**
+
+            - **Nombre**: Elige un nombre descriptivo (ej: "Desarrollo Web Q1 2025")
+            - **Descripción**: Añade una descripción opcional
+            - **Visibilidad**:
+            - **Private**: Solo tú y colaboradores pueden verlo
+            - **Public**: Visible para todos
+            - **README**: Opcional, pero recomendado para explicar el propósito
+
+      </Steps>
+
+   </TabItem>
+   
+   <TabItem label="Usage">
+      <Steps>
+         1. **Mover tareas**
+
+            - Arrastra y suelta las tarjetas entre columnas
+            - Usa los atajos de teclado para navegación rápida
+            - Los cambios se sincronizan automáticamente con los issues
+
+         2. **Filtrar contenido**
+
+            - Usa la barra de filtros para mostrar solo:
+            - Tareas asignadas a ti: `assignee:@me`
+            - Por etiquetas: `label:"bug"`
+            - Por estado: `state:open`
+
+         3. **Invitar colaboradores**
+
+            - Ve a **Settings** → **Manage access**
+            - Haz clic en **"Add people"**
+            - Ingresa usernames o emails
+            - Asigna permisos (Read, Write, Admin)
+
+         4. **Crear tareas directamente**
+
+            - Haz clic en **"+ Add item"** en cualquier columna
+            - Escribe el título de la tarea
+            - Presiona Enter para crear
+
+         5. **Convertir tareas en issues**
+
+            - Haz clic en la tarea creada
+            - Selecciona **"Convert to issue"**
+            - Elige el repositorio de destino
+            - La tarea se convertirá en un issue vinculado
+
+         6. **Tips y mejores prácticas**
+
+            - Usa prefijos para tipos de tarea: `[BUG]`, `[FEATURE]`, `[DOCS]`
+            - Sé descriptivo pero conciso en los títulos
+            - Usa etiquetas de prioridad consistentemente
+
+
+         7. **Ejemplo práctico**
+
+               Supongamos que estás desarrollando una aplicación web. Tu tablero podría verse así:
+
+               | Backlog               | To Do           | In Progress         | Code Review       | Testing   | Done          |
+               | --------------------- | --------------- | ------------------- | ----------------- | --------- | ------------- |
+               | Diseño UX/UI          | Login system    | Payment integration | User registration | Dark mode | Home page     |
+               | SEO optimization      | Database schema | -                   | -                 | -         | Setup project |
+               | Mobile responsiveness | -               | -                   | -                 | -         | -             |
+      </Steps>
+
+   </TabItem>
+</Tabs>
+
+## Recursos adicionales
+
+- [Documentación oficial de GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects)

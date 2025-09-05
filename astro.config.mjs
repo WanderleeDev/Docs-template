@@ -13,12 +13,11 @@ export default defineConfig({
     }),
     starlight({
       title: "API Documentation",
-      titleDelimiter: "+",
       social: [
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/withastro/starlight",
+          href: "https://github.com/WanderleeDev/Docs-template",
         },
       ],
       // sidebar: [

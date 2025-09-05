@@ -1,7 +1,9 @@
 ---
-title: Sequence diagram
+title: Login
 description: Login flow.
 ---
+
+## Sequence diagram
 
 ```plantuml
 @startuml
