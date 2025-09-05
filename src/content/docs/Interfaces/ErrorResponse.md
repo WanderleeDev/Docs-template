@@ -14,8 +14,7 @@ classDiagram
         +detail: string
     }
 
-    class HttpCode {
-        <<enumeration>>
+    class HttpCode~enum~ {
         UNAUTHORIZED
         BAD_REQUEST
         INTERNAL_ERROR

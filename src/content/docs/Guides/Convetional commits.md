@@ -7,7 +7,7 @@ description: How to use the conventional commit messages
 
 Before you start, make sure you have:
 
-- A good understanding of the conventional commit messages
+- A good understanding of the [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) messages
 - A Git repository where you can commit changes
 
 ## Usage
